@@ -1,6 +1,6 @@
 module.exports = { 
     run: async (client, message) => {
-        embed = new RichEmbed()
+        embed = new MessageEmbed()
         .setIcon(client.user.displayAvatarURL)
         .setColor(roleColor)
         .setDescription(args.slice(1).join(''))

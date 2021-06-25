@@ -1,6 +1,6 @@
 require('dotenv').config();
 require('http').config();
-require('RichEmbed').config;
+require('MessageEmbed').config;
 client.on('request', request => {
   const webhook = new DiscordWebhook
     run: async () => {

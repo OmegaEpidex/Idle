@@ -22,7 +22,7 @@ async ( message, args) => {
       .then(m => m.delete(5000));
 
     if (args[0].toLowerCase() ==='embed') {
-        const embed = new RichEmbed()
+        const embed = new MessageEmbed()
         .setColor(roleColor)
         .setDescription(args.slice(1).join(''))
         .setTimeStamp()
@@ -57,33 +57,33 @@ client.on('message', async message => {
     }  
     if (cmd === 'Tag') {
     response = resPond.content.run(Tagstime.js);
-    RichEmbed.channel.send(response);
+    MessageEmbed.channel.send(response);
     }       
     if (cmd === 'clans') {
         response;
         bin.content(response)
-        RichEmbed.channel.send(response, 'Community Clans');
+        MessageEmbed.channel.send(response, 'Community Clans');
     }    
     if (cmd === 'joinClan') {
         response = run('./clan_application.js');
-        RichEmbed.channel.send(response, 'Initializing...');
+        MessageEmbed.channel.send(response, 'Initializing...');
     }
     if (cmd === 'joinComm') {
         response = run('./comm_application.js');
-        RichEmbed.channel.send(response, 'Initializing...');
+        MessageEmbed.channel.send(response, 'Initializing...');
     }
     if (cmd === 'bunker-code') {
         response = bunker-codes.fetch(bunker-code, B_date);
-        RichEmbed.channel.send(response, '🔥Current ☣️Bunker☣️ Code: 😍${bunker_code.B_date}😍 ${date.time}');
+        MessageEmbed.channel.send(response, '🔥Current ☣️Bunker☣️ Code: 😍${bunker_code.B_date}😍 ${date.time}');
     }
     if (cmd === 'ticKet') {
         response = request.content.MemberInfo(MemberInfo.args('Clan_Role, Clan_Role, Tag_T'))
         request()
         .content(Clan_Role, Tag_T, Member_Role)
         .date(UTC);
-        RichEmbed.channel.send(response, 'Current Records');
+        MessageEmbed.channel.send(response, 'Current Records');
     }else if (ticKet === [0]) {
-        RichEmbed.channel.send('You Have no TicKets recorded ${run: server.TAGS;}');
+        MessageEmbed.channel.send('You Have no TicKets recorded ${run: server.TAGS;}');
     }
 
 })
