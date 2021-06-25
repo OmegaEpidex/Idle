@@ -1,0 +1,28 @@
+{
+  "name": "idlebot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "BOT.js",
+  "go": "node ./BOT.js",
+  "dev": "nodemon ./main.js",
+  "client.user.id": "857776872959377468",
+			"client.user.token": "./env",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clan-form": "./Forms/clan-form.js",
+    "comm-form": "./Forms/comm-form.js",
+    "alliance-form": "./Forms/alliance-form.js",
+    "Tagstime": "./Tags/Tagstime.js",
+    "bunker-code": "./AlphaBunker/BunkerCode.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0",
+    "fetch": "^1.1.0",
+    "g": "^2.0.1",
+    "nodemon": "^2.0.7"
+  }
+}
