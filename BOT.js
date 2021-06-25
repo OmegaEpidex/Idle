@@ -1,5 +1,5 @@
 require('dotenv').config();
-const {  RichEmbed, webhook, Client } = require('discord.js');
+const {  webhook, Client } = require('discord.js');
 client = new Client();
 client.on('ready', () => {
     console.log(" 'Excellent,' ${client.user.username} 'is now Online' ");
